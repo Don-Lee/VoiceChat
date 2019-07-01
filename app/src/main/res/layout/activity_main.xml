@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/id_lv"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:background="#ebebeb"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></ListView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <cn.rjgc.voicechat.util.VoiceRecorderButton
+            android:id="@+id/id_voice_recorder_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/btn_recorder_normal"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/recorder_normal"
+            android:textColor="#727272"
+            android:minHeight="0dp">
+            <!--android:minHeight="0dp"可以消除按钮内文字和上下边距的距离-->
+        </cn.rjgc.voicechat.util.VoiceRecorderButton>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ccc"/>
+
+    </FrameLayout>
+
+</LinearLayout>
